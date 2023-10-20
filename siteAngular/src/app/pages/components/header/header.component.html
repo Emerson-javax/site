@@ -1,12 +1,26 @@
+
 <header>
-    <h1>Meu Cabeçalho</h1>
-    <nav>
-      <ul>
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/sobre">Jobs</a></li>
-        <li><a routerLink="/sobre">Sobre mim</a></li>
-        <li><a routerLink="/sobre">Contact</a></li>
-        <!-- Adicione outros links de navegação aqui -->
-      </ul>
-    </nav>
-  </header>
+<body>
+    <header>
+        <div class="logo">Logo Aqui</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+
+                <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+                <mat-menu #menu="matMenu">
+                  <button mat-menu-item>Item 1</button>
+                  <button mat-menu-item>Item 2</button>
+                </mat-menu>
+                
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Bem-vindo ao nosso site!</h1>
+        <p>Algum conteúdo interessante aqui.</p>
+    </div>
+</body>
+</header>
